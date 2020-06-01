@@ -3,7 +3,7 @@ title: "CV"
 date: 2020-05-12T09:46:04+03:00
 ---
 
-"Jesse Liskola is the great man. He has years of experience in the field of movie industry, which has given him wide range of experience in different fields. Jesse has skills combined with hard work ethich. He is the guy you want on your side."
+*"Jesse Liskola is the great man. He has years of experience in the field of movie industry, which has given him wide range of experience in different fields. Jesse has skills combined with hard work ethich. He is the guy you want on your side."*
 
 Hi! I am Jesse. I have been dancing as long as I remember. Movies were also my passion since I was a kid. At the age of 24 my life started to enfold professonaly around the Finnish film industry. I’ve been participated in several productions: movies and short movies, music videos, commercials, TV-series and theaters.
 
