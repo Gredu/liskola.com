@@ -1,0 +1,65 @@
+// @import 'colors';
+
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/greenarrow-parkinglot.jpg');
+  background-size: cover;
+  background-position-y: -120px;
+}
+
+a {
+  color: white;
+  font-weight: none;
+  text-decoration: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 66.666% 33.333%;
+  grid-template-rows: auto auto 400px;
+  grid-template-areas:
+  "header profile"
+  "main profile"
+  "footer profile";
+  padding: 0 1em 0 1em;
+}
+
+.header {
+  grid-area: header;
+  img {
+    width: 50%;
+    height: auto;
+  }
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+  margin: 0 auto;
+}
+
+.profile {
+  grid-area: profile;
+  img {
+    padding: 20px;
+    max-width: 350px;
+  }
+  ul {
+    li {
+      display: inline;
+      a {
+        margin-left: 40px;
+      }
+      a:not(:first-child) {
+        text-decoration: underline;
+        margin-left: 40px;
+      }
+    }
+  }
+}
