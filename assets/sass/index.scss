@@ -78,8 +78,19 @@ a:link, a:visited {
 
 .footer {
   grid-area: footer;
-  margin: 0 auto;
-  padding-top: 3em;
+  position: relative;
+  overflow: hidden;
+  margin: 0 4%;
+  padding-top: 56.25%;
+  height: 0;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
 }
 
 .profile {
@@ -108,7 +119,6 @@ a:link, a:visited {
       margin-right: 30px;
     }
   }
-  iframe {
-    border: solid 2px white;
-  }
 }
+
+
