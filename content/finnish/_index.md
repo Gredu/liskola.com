@@ -1,7 +1,10 @@
 ---
-title: "CV"
-date: 2020-05-12T09:46:04+03:00
-description: "Hänellä on monen vuoden kokemus elokuva-alalla, mikä on antanut hänelle monipuoliset taidot ja osaamisen lähes joka asiassa. Jesse on yhdistelmä väsymätöntä työetiikkaa ja kokemusten tuomaa viisautta. Jesse saa asioita aikaiseksi."
+title: CV
+date: 2020-05-12T06:46:04.000Z
+description: Jesse Liskolalla on monen vuoden kokemus elokuva-alalla, mikä on
+  antanut hänelle monipuoliset taidot ja osaamisen lähes joka asiassa. Jesse on
+  yhdistelmä väsymätöntä työetiikkaa ja kokemusten tuomaa viisautta. Jesse saa
+  asioita aikaiseksi.
 ---
 
 Moikka! Olen Jesse. Olen ammatiltani näyttelijä elokuvissa, tv-sarjoissa ja teattereissa. Lapsesta asti olen harrastanut tanssia ja ollut kiinnostunut elokuvista. 24 vuotiaana urani alkoi suomalaisten elokuvien parissa. Olen osallistunut lukuisiin projekteihin: elokuva-, musiikkivideo-, mainos-, tv- ja teatterituotantoihin.
