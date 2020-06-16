@@ -1,7 +1,7 @@
 ---
 title: "CV"
 date: 2020-05-12T09:46:04+03:00
-description: "Jesse Liskola is a great man. He has years of experience in the field of filmmaking, which has given him a plethora of varied skills, combined with a strong work ethic. He is the guy you want on your team."
+description: "Jesse Liskola is a great man. He has years of experience in the field of filmmaking, which has given him a plethora of varied skills. He is a combination of strong work ethic and knowledge. Jesse is known as a man who can deliver."
 ---
 
 Hi! I am Jesse. I have been dancing as long as I remember. Movies were also my passion since I was a kid. At the age of 24, my life started focusing professionally around the Finnish film industry. I have participated in several productions, movies and short films, music videos, commercials, television series and theater productions.

@@ -1,2 +1,13 @@
 languageCode = "en_us"
+DefaultContentLanguage = "en"
 title = "Jesse Liskola"
+
+[languages]
+  [languages.en]
+    contentDir = "content/english"
+    languageName = "en"
+    weight = 1
+  [languages.fi]
+    contentDir = "content/finnish"
+    languageName = "fi"
+    weight = 2

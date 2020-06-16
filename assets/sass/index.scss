@@ -36,18 +36,31 @@ a:link, a:visited {
 .container {
   display: grid;
   padding: 0 1em 0 1em;
-  // grid-template-columns: 2fr 1fr;
-  grid-template-rows: auto auto 400px;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto auto 400px;
   grid-template-areas:
+  "language language"
   "header profile"
   "main profile"
   "footer footer";
   @media only screen and (max-width: 424px) {
     // grid-template-columns: 1fr;
     grid-template-areas:
+    "language language"
     "header header"
     "main main"
     "footer footer";
+  }
+}
+
+.language {
+  grid-area: language;
+  text-align: right;
+  ul {
+    margin: 0 20px 0 0;
+    li {
+      display: inline-block;
+    }
   }
 }
 

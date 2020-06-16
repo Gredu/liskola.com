@@ -8,13 +8,21 @@
     <title>Jesse Liskola</title>
   </head>
   <body>
+
     <div class="max-width">
       <div class="container">
-        <header class="header"><img src="logoFull.png" alt=""></header>
+        <div class="language">
+          <ul>
+            {{ range $.Site.Home.AllTranslations  }}
+            <li><a href="{{ .Permalink  }}">{{ .Language.LanguageName  }}</a></li>
+            {{ end  }}
+          </ul>
+        </div>
+        <header class="header"><img src="/logoFull.png" alt=""></header>
         <main class="main">
           <em>"{{ .Description }}"</em>
           <div class="center">
-            <img src="who.jpg" class="sm" alt="Jesse Liskola's profile picture">
+            <img src="/who.jpg" class="sm" alt="Jesse Liskola's profile picture">
           </div>
           {{ .Content }}
         </main>
@@ -24,7 +32,7 @@
           <!-- <iframe class="resp&#45;iframe" src="https://www.youtube.com/embed/dQw4w9WgXcQ" gesture="media"  allow="encrypted&#45;media" allowfullscreen></iframe> -->
         </div>
         <div class="profile">
-          <img class="md" src="who.jpg" alt="Jesse Liskola's profile picture">
+          <img class="md" src="/who.jpg" alt="Jesse Liskola's profile picture">
           <nav>
             <ul>
               <li><a href="https://resume.io/r/D57VBpBZh">CV</a></li>
