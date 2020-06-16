@@ -1,3 +1,28 @@
 backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
+media_folder: "static/media"
+public_folder: "/media"
+site_url: liskola.com
+editor:
+  preview: false
+
+collections:
+  - name: "pages"
+    label: "Sivut"
+    description: "Sivujen muokkaus."
+    files:
+      - name: "english"
+        label: "Englanti"
+        file: "content/english/_index.md"
+        description: "Englanninkieliset sivut"
+        fields:
+          - { label: "Lainaus", name: "description", widget: "string" }
+          - { label: "Teksti", name: "body", widget: "markdown" }
+      - name: "finnish"
+        label: "Suomi"
+        file: "content/finnish/_index.md"
+        description: "Suomenkieliset sivut"
+        fields:
+          - { label: "Lainaus", name: "description", widget: "string" }
+          - { label: "Teksti", name: "body", widget: "markdown" }
