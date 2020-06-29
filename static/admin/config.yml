@@ -9,20 +9,13 @@ editor:
 
 collections:
   - name: "pages"
-    label: "Sivut"
-    description: "Sivujen muokkaus."
+    label: "Pages"
+    description: "Edit pages"
     files:
-      - name: "english"
-        label: "Englanti"
-        file: "content/english/_index.md"
-        description: "Englanninkieliset sivut"
+      - name: "quote"
+        label: "Edit quote"
+        file: "content/_index.md"
+        description: "Editing quote happens in two way: a name of the person you are quoting and quote itself. Quoter field can be left empty if you don't need to name quoter."
         fields:
-          - { label: "Lainaus", name: "description", widget: "string" }
-          - { label: "Teksti", name: "body", widget: "markdown" }
-      - name: "finnish"
-        label: "Suomi"
-        file: "content/finnish/_index.md"
-        description: "Suomenkieliset sivut"
-        fields:
-          - { label: "Lainaus", name: "description", widget: "string" }
-          - { label: "Teksti", name: "body", widget: "markdown" }
+          - { label: "Quoter", name: "quote", widget: "string" }
+          - { label: "Quote", name: "body", widget: "markdown" }
