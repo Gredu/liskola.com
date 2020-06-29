@@ -1,4 +1,5 @@
-$blue: #00adef;
+$midnight-blue: #081B2B;
+$light-sea-green: #189BAC;
 
 @font-face{
   font-family: TravelingTypewriter;
@@ -6,75 +7,62 @@ $blue: #00adef;
 }
 
 body {
-  background-color: black;
+  background-color: $midnight-blue;
   color: white;
   margin: 0;
   padding: 0;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/greenarrow-parkinglot.jpg');
-  background-size: cover;
-  background-position-y: -120px;
   font-family: TravelingTypewriter, sans-serif;
   font-size: 16px;
 }
 
+h1 {
+  font-size: 4em;
+  margin: 0 0 12px 0;
+}
+
 a {
-  color: $blue;
+  color: $light-sea-green;
   font-weight: none;
   text-decoration: none;
 }
 
 a:link, a:visited {
-  color:$blue;
+  color:$light-sea-green;
   font-weight: bold;
 }
 
 .max-width {
   max-width: 950px;
+  min-width: 845px;
   margin: 2em auto;
 }
 
 .container {
   display: grid;
   padding: 0 1em 0 1em;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: auto auto auto 400px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto 3px auto auto;
   grid-template-areas:
-  "language language"
-  "header profile"
-  "main profile"
-  "footer footer";
-  @media only screen and (max-width: 424px) {
-    // grid-template-columns: 1fr;
+  "profile main"
+  "line line"
+  "vimeo vimeo"
+  "gallery gallery";
+  @media only screen and (max-width: 844px) {
+    grid-template-columns: 1fr;
+  grid-template-rows: auto auto 3px auto;
     grid-template-areas:
-    "language language"
-    "header header"
-    "main main"
-    "footer footer";
-  }
-}
-
-.language {
-  grid-area: language;
-  text-align: right;
-  ul {
-    margin: 0 20px 0 0;
-    li {
-      display: inline-block;
-    }
-  }
-}
-
-.header {
-  grid-area: header;
-  img {
-    width: 350px;
-    height: auto;
+    "main"
+    "profile"
+    "line"
+    "vimeo"
+    "gallery";
   }
 }
 
 .main {
   grid-area: main;
-  align-items: center;
+  margin-left: 2em;
+  max-width: 500px;
   em {
     display: block;
     margin: 0 2em;
@@ -83,14 +71,48 @@ a:link, a:visited {
     width: 280px;
     margin: 1.2em auto;
     display: none;
-    @media only screen and (max-width: 424px) {
-      display: block;
-    }
   }
+  p.quote {
+    text-align: right;
+  }
+  @media only screen and (max-width: 844px) {
+    margin: 1em auto;
+  }    
 }
 
-.footer {
-  grid-area: footer;
+.line {
+  grid-area: line;
+  background-color: white;
+}
+
+.profile {
+  grid-area: profile;
+  align-items: right;
+  background-color: $midnight-blue;
+  img {
+    margin: 20px 20px 4px 20px;
+    max-width: 280px;
+    border-right: solid 3px $light-sea-green;
+    display: block;
+  }
+  ul {
+    list-style-type: none;
+    margin-top: 1em;
+    width: 280px;
+    li {
+      font-size: 20px;
+    }
+  }
+  @media only screen and (max-width: 844px) {
+    margin: 1em auto;
+    li {
+      text-align: center;
+    }
+  }    
+}
+
+.vimeo {
+  grid-area: vimeo;
   position: relative;
   overflow: hidden;
   margin: 0 4%;
@@ -106,32 +128,22 @@ a:link, a:visited {
   }
 }
 
-.profile {
-  grid-area: profile;
-  img {
-    margin: 20px 20px 4px 20px;
-    max-width: 280px;
-    border: solid 2px white;
-    display: none;
-    @media only screen and (min-width: 425px) {
-      display: block;
-    }
-  }
-  ul {
-    display: none;
-    @media only screen and (min-width: 425px) {
-      display: block;
-    }
-    margin-top: 0;
-    padding-left: 26px;
-    text-align: center;
-    width: 280px;
-    li {
-      display: inline-block;
-      font-size: 20px;
-      margin-right: 30px;
-    }
-  }
+.gallery {
+  grid-area: gallery;
 }
 
-
+.footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  h3 {
+    margin: 1em 0 .7em 0;
+    // text-decoration: underline;
+    border-bottom: solid 3px $light-sea-green;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}

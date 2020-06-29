@@ -12,37 +12,51 @@
 
     <div class="max-width">
       <div class="container">
-        <div class="language">
-          <ul>
-            {{ range $.Site.Home.AllTranslations  }}
-            <li><a href="{{ .Permalink  }}">{{ .Language.LanguageName  }}</a></li>
-            {{ end  }}
-          </ul>
-        </div>
-        <header class="header"><img src="/logoFull.png" alt=""></header>
-        <main class="main">
-          <em>"{{ .Description }}"</em>
-          <div class="center">
-            <img src="/who.jpg" class="sm" alt="Jesse Liskola's profile picture">
-          </div>
-          {{ .Content }}
-        </main>
-        <div class="footer">
-          <!-- <iframe src="https://player.vimeo.com/video/178330969" width="640" height="360" frameborder="0" style="border: solid 2px white;" allow="autoplay; fullscreen" allowfullscreen></iframe> -->
-          <iframe src="https://player.vimeo.com/video/178330969" allow="autoplay; fullscreen" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-          <!-- <iframe class="resp&#45;iframe" src="https://www.youtube.com/embed/dQw4w9WgXcQ" gesture="media"  allow="encrypted&#45;media" allowfullscreen></iframe> -->
-        </div>
         <div class="profile">
-          <img class="md" src="/who.jpg" alt="Jesse Liskola's profile picture">
-          <nav>
+          <img class="md" src="/profile.jpg" alt="Jesse Liskola's profile picture">
             <ul>
-              <li><a href="https://resume.io/r/D57VBpBZh">CV</a></li>
-              <li><a href="https://www.imdb.com/name/nm4371508/">IMDB</a></li>
-              <li><a href="https://www.instagram.com/jliskola/?hl=fi">Instagram</a></li>
+              <li>ACTOR</li>
+              <li>PERFORMER</li>
+              <li>STUNT</li>
+              <li>CHOREOGRAPHER</li>
+              <li>COORDIINATOR</li>
             </ul>
+          <nav>
           </nav>
         </div>
-        <!-- <nav class="nav"></nav> -->
+        <main class="main">
+          <h1>Jesse Liskola</h1>
+          <em>{{ .Content }}</em>
+          <p class="quote"> - {{ .Params.quote }}</span>
+          <div class="footer">
+            <div class="contact">
+              <h3>Contact</h3>
+              <ul>
+                <li>+358405120933</li>
+                <li><a href="mailto:j.liskola@gmail.com">j.liskola@gmail.com</a></li>
+              </ul>
+            </div>
+            <div class="referals">
+              <h3>Referals</h3>
+              <ul>
+                <li><a href="https://resume.io/r/D57VBpBZh">CV</a></li>
+                <li><a href="https://www.imdb.com/name/nm4371508/">IMDB</a></li>
+                <li><a href="https://www.instagram.com/jliskola/?hl=fi">Instagram</a></li>
+              </ul>
+            </div>
+            <!-- <div class="partners"> -->
+            <!--   <h3>Partners</h3> -->
+            <!--   <ul> -->
+            <!--     <li><a href="https://www.mikkohmc.com/">HMCIndie</a></li> -->
+            <!--     <li><a href="https://www.ruinedfilms.com/">Ruined Films</a></li> -->
+            <!--   </ul> -->
+            <!-- </div> -->
+          </div>
+        </main>
+        <div class="line"></div>
+        <div class="vimeo">
+          <iframe src="https://player.vimeo.com/video/178330969" allow="autoplay; fullscreen" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
 
