@@ -27,7 +27,9 @@
         <main class="main">
           <h1>Jesse Liskola</h1>
           <em>{{ .Content }}</em>
-          <p class="quote"> - {{ .Params.quote }}</span>
+          {{ with .Params.quote }}
+          <p class="quote"> - {{ . }}</span>
+          {{ end }}
           <div class="footer">
             <div class="contact">
               <h3>Contact</h3>
