@@ -33,7 +33,6 @@ a:link, a:visited {
 
 .max-width {
   max-width: 950px;
-  min-width: 845px;
   margin: 2em auto;
 }
 
@@ -107,6 +106,9 @@ a:link, a:visited {
     margin: 1em auto;
     li {
       text-align: center;
+    }
+    img {
+      border-right: none;
     }
   }    
 }
