@@ -15,7 +15,7 @@ collections:
       - name: "quote"
         label: "Edit quote"
         file: "content/_index.md"
-        description: "Editing quote happens in two way: a name of the person you are quoting and quote itself. Quoter field can be left empty if you don't need to name quoter."
+        description: "Editing quote happens in two way: a name of the person you are quoting and quote itself."
         fields:
           - { label: "Quoter", name: "quote", widget: "string" }
           - { label: "Quote", name: "body", widget: "markdown" }
