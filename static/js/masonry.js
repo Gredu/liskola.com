@@ -37,7 +37,9 @@ const generateImages = (el) => {
   };
 
   let images = document.createDocumentFragment();
-  const names = [ "clap.jpg", "kungfu.jpg", "smily.jpg", "bully.jpg", "driver.jpg", "profilesmoke.jpg", "snow.jpg" ]
+
+  const names = grid.dataset.images.split(" ")
+  names.pop()
   names.forEach(name => images.appendChild(newImage(name)))
   el.appendChild(images);
 
