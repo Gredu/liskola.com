@@ -17,6 +17,7 @@ collections:
         file: "content/_index.md"
         description: "Quote has three section: quote, quoter and the quoter's title. Quoter and quoter's title are all capitalized."
         fields:
+          - { label: "Traits", name: "traits", widget: "list", allow_add: true }
           - { label: "Quoter", name: "quote", widget: "string" }
           - { label: "Quoter's Title", name: "quoteTitle", widget: "string" }
           - { label: "Quote", name: "body", widget: "markdown" }
