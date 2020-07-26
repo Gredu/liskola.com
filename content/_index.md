@@ -1,6 +1,11 @@
 ---
 title: CV
 date: 2020-05-12T06:46:04.000Z
+traits:
+  - actor
+  - stunt performer
+  - choreographer
+  - coordinator
 quote: Mikko Löppönen
 quoterTitle: editor/director/stunt coordinator
 ---

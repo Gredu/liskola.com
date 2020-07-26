@@ -64,6 +64,10 @@ section#header {
     "traits profile-picture"
     "quote quote";
     justify-content: center;
+    align-content: start;
+    background-image: url("/background/stargazing.jpg");
+    background-size: cover;
+    height: 900px;
 
     h1 {
       font-size: 98px;
@@ -91,7 +95,6 @@ section#header {
       text-align: right;
       img {
         width: 300px;
-        // height: 50%;
       }
     }
     .quote {
@@ -108,15 +111,19 @@ section#header {
 }
 
 section#showreel {
+  background-image: url("/background/greenarrow-parkinglot.jpg");
+  background-attachment: fixed;
+  height: 470px;
+  padding-top: 3em;
   .vimeo {
-    width: $desktop-width;
+    display: grid;
+    grid-template-columns: $desktop-width;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-items: start;
     position: relative;
     overflow: hidden;
-    // margin: 2em 4%;
-    margin: 2em auto;
     padding-top: 24.25%;
-    // padding-top: 56.25%;
-    height: 0;
     iframe {
       position: absolute;
       top: 0;
@@ -132,4 +139,8 @@ section#footer {
   display: grid;
   grid-template-columns: repeat(2, $desktop-width-even);
   justify-content: center;
+}
+
+section#gallery {
+
 }

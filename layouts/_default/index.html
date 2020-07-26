@@ -15,14 +15,14 @@
         <div class="header"><h1>Jesse Liskola</h1></div>
         <div class="traits">
           <ul>
-            <li>ACTOR</li>
-            <li>STUNT PERFORMER</li>
-            <li>CHOREOGRAPHER</li>
-            <li>COORDIINATOR</li>
+            {{ range .Params.traits }}
+            <li>{{ . | upper }}</li>
+            {{ end }}
           </ul>
         </div>
         <div class="profile-picture">
-          <img src="/profile.jpg" alt="Jesse Liskola's profile picture">
+          <!-- <img src="/profile.jpg" alt="Jesse Liskola's profile picture"> -->
+          <img src="/profile1.jpg" alt="Jesse Liskola's profile picture">
         </div>
         <div class="quote">
           <p>{{ .Content }}</p>
@@ -32,29 +32,27 @@
     </section>
 
     <section id="showreel">
-      <div class="vimeo">
-        <h2>Showreel</h2>
+        <div class="vimeo">
         <iframe src="https://player.vimeo.com/video/178330969" allow="autoplay; fullscreen" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
       </div>
     </section>
 
     <section id="footer">
-      <div class="masonry-gallery">
-        <div class="grid" data-images="{{ range readDir `/static/gallery/` }}{{ .Name }} {{ end }}"></div>
-      </div>
-      <div class="contact">
-        <h3>Contact</h3>
-        <ul>
-          <li>+358 405120933</li>
-          <li><a href="mailto:j.liskola@gmail.com">j.liskola@gmail.com</a></li>
-        </ul>
-        <h3>Referals</h3>
-        <ul>
-          <li><a href="https://resume.io/r/D57VBpBZh">CV</a></li>
-          <li><a href="https://www.imdb.com/name/nm4371508/">IMDB</a></li>
-          <li><a href="https://www.instagram.com/jliskola/?hl=fi">Instagram</a></li>
-        </ul>
-      </div>
+      <h3>Contact</h3>
+      <ul>
+        <li>+358 405120933</li>
+        <li><a href="mailto:j.liskola@gmail.com">j.liskola@gmail.com</a></li>
+      </ul>
+      <h3>Referals</h3>
+      <ul>
+        <li><a href="https://resume.io/r/D57VBpBZh">CV</a></li>
+        <li><a href="https://www.imdb.com/name/nm4371508/">IMDB</a></li>
+        <li><a href="https://www.instagram.com/jliskola/?hl=fi">Instagram</a></li>
+      </ul>
+    </section>
+
+    <section id="gallery">
+      <div class="grid" data-images="{{ range readDir `/static/gallery/` }}{{ .Name }} {{ end }}"></div>
     </section>
 
     <script type="text/javascript" src="/js/underscore-min.js"></script>
