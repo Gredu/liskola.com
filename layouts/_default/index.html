@@ -26,7 +26,7 @@
         </div>
         <div class="quote">
           <p>{{ .Content }}</p>
-          <p class="quoter">{{ .Params.quote }}</p>
+          <p class="quoter"> - {{ .Params.quote | upper }}<br>{{ .Params.quoterTitle | upper }}</p>
         </div>
       </div>
     </section>
