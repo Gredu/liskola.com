@@ -15,7 +15,8 @@ collections:
       - name: "quote"
         label: "Edit quote"
         file: "content/_index.md"
-        description: "Editing quote happens in two way: a name of the person you are quoting and quote itself."
+        description: "Quote has three section: quote, quoter and the quoter's title. Quoter and quoter's title are all capitalized."
         fields:
           - { label: "Quoter", name: "quote", widget: "string" }
+          - { label: "Quoter's Title", name: "quoteTitle", widget: "string" }
           - { label: "Quote", name: "body", widget: "markdown" }
