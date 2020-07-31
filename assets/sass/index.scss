@@ -68,8 +68,9 @@ section#header {
     justify-content: center;
     align-content: start;
     background-image: url("/background/stargazing.jpg");
+    background-position: 50% 50%;
     background-size: cover;
-    height: 900px;
+    min-height: 900px;
 
     h1 {
       font-size: 98px;
@@ -109,14 +110,45 @@ section#header {
       }
     }
 
+    @media all and (max-width: 725px) {
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas:
+      "header"
+      "profile-picture"
+      "traits"
+      "quote";
+
+      .profile-picture {
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 64px;
+      }
+      .traits {
+        text-align: center;
+        ul {
+          margin-left: 1em;
+          li {
+            font-size: 32px;
+          }
+        }
+      }
+
+    }
+
   }
 }
 
 section#showreel {
   background-image: url("/background/greenarrow-parkinglot.jpg");
   background-attachment: fixed;
-  height: 470px;
-  padding-top: 3em;
+  min-height: 200px;
+  // margin: 0;
+  padding: 2em 0em 2em 0em;
+  // margin: 2em 0em 2em 0em;
+  // padding: 0;
   .vimeo {
     display: grid;
     grid-template-columns: $desktop-width;
@@ -126,6 +158,8 @@ section#showreel {
     position: relative;
     overflow: hidden;
     padding-top: 24.25%;
+    min-height: 200px;
+    // max-width: 600px;
     iframe {
       position: absolute;
       top: 0;
@@ -143,14 +177,11 @@ $footer-background-size-y: 669px / 1.6;
 section#footer {
   background-color: #000000;
   background-image: url("/background/darkStalker-flipped.jpg");
-  background-position: center;
   background-repeat: no-repeat;
-  background-size: $footer-background-size-x $footer-background-size-y;
-  background-position-x: -25px;
-  // background-size: cover;
-  // background-scale: 50%;
+  background-position: -34vw 50%;
+  background-size: cover;
+  height: $footer-background-size-y;
   display: grid;
-  // grid-template-columns: repeat(2, $desktop-width-even);
   grid-template-columns: repeat(2, auto);
   grid-column-gap: 4em;
   justify-content: center;
@@ -168,13 +199,39 @@ section#footer {
     padding: 0;
     font-size: 24px;
   }
-  // ul, h3 {
-  //   font-size: 24px;
-  // }
   div {
     min-width: 176px;
-    height: $footer-background-size-y;
-    // padding: 3em 1em auto 1em;
+  }
+
+  @media all and (min-width: 1441px) {
+    background-position: -15vw 50%;
+  }
+
+  @media all and (max-width: 1440px) {
+    background-position: -15vw 50%;
+  }
+
+  @media all and (max-width: 1024px) {
+    background-position: -33vw 50%;
+  }
+
+  @media all and (max-width: 768px) {
+    background-position: -60vw 50%;
+  }
+
+  @media all and (max-width: 475px) {
+    grid-template-columns: auto;
+    grid-column-gap: 0;
+
+    h3 {
+      margin: .6em 0 .6em 0;
+      padding: 0;
+    }
+
+    // ul {
+    //   margin: 0;
+    //   padding: 0;
+    // }
   }
 }
 
