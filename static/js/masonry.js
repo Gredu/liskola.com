@@ -1,6 +1,7 @@
 const grid = document.querySelector(".grid");
 const rowSize = parseInt(getComputedStyle(grid).getPropertyValue("grid-auto-rows"), 10);
-const rowGap = parseInt(getComputedStyle(grid).getPropertyValue("grid-gap"), 10);
+// const rowGap = parseInt(getComputedStyle(grid).getPropertyValue("grid-gap"), 10);
+const rowGap = parseInt(getComputedStyle(grid).getPropertyValue("grid-row-gap"), 10);
 const gridItems = [];
 
 const positionGridItems = () => {
