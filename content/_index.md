@@ -3,7 +3,6 @@ title: CV
 date: 2020-05-12T06:46:04.000Z
 traits:
   - Stunt performer
-  - Fight choreographer
   - Stunt Coordinator
   - Actor
 quote: Mikko Löppönen
